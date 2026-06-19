@@ -1,0 +1,321 @@
+{% extends "base.html" %}
+
+{% block title %}About - Speed Estimation System{% endblock %}
+
+{% block content %}
+
+<!-- ================= HERO SECTION ================= -->
+<section class="about-hero-section text-white d-flex align-items-center position-relative">
+    <!-- Background Image -->
+    <div class="hero-background position-absolute w-100 h-100">
+        <img src="/static/images/about-hero-bg.jpg" alt="About Background" class="w-100 h-100" style="object-fit: cover;">
+        <div class="position-absolute top-0 start-0 w-100 h-100" style="background: linear-gradient(135deg, rgba(188, 67, 13, 0.9), rgba(240, 148, 16, 0.9));"></div>
+    </div>
+    
+    <!-- Content -->
+    <div class="container py-5 position-relative" style="z-index: 2;">
+        <div class="row align-items-center">
+            <div class="col-lg-8 mx-auto text-center">
+                <h1 class="display-4 fw-bold mb-4">About Our Technology</h1>
+                <p class="lead mb-0" style="font-size: 1.3rem; line-height: 1.6;">
+                    Pioneering the future of traffic analysis with cutting-edge AI vision and radar fusion technology
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ================= MISSION SECTION ================= -->
+<section class="mission-section py-5 bg-white">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 mb-4 mb-lg-0">
+                <div class="mission-image text-center">
+                    <img src="/static/images/technology-mission.jpg" alt="Our Mission" class="img-fluid rounded-3 shadow" style="border-radius: 15px !important;">
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="mission-content ps-lg-4">
+                    <h2 class="fw-bold mb-4" style="color: #BC430D;">Our Mission</h2>
+                    <p class="text-muted mb-4" style="font-size: 1.1rem; line-height: 1.7;">
+                        To revolutionize traffic safety and analysis through innovative AI-powered solutions that deliver unparalleled accuracy in real-time speed estimation and vehicle detection.
+                    </p>
+                    <p class="text-muted mb-4" style="font-size: 1.1rem; line-height: 1.7;">
+                        Our technology bridges the gap between traditional traffic monitoring systems and modern artificial intelligence, creating smarter, safer roadways for communities worldwide.
+                    </p>
+                    <div class="mission-stats">
+                        <div class="row text-center">
+                            <div class="col-4">
+                                <div class="stat-value h3 fw-bold mb-1" style="color: #BC430D;">50+</div>
+                                <div class="stat-label text-muted small">Cities Served</div>
+                            </div>
+                            <div class="col-4">
+                                <div class="stat-value h3 fw-bold mb-1" style="color: #BC430D;">99.7%</div>
+                                <div class="stat-label text-muted small">Accuracy Rate</div>
+                            </div>
+                            <div class="col-4">
+                                <div class="stat-value h3 fw-bold mb-1" style="color: #BC430D;">24/7</div>
+                                <div class="stat-label text-muted small">Monitoring</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ================= TECHNOLOGY OVERVIEW ================= -->
+<section class="tech-overview-section py-5 bg-beige-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center mb-5">
+                <h2 class="fw-bold mb-3" style="color: #BC430D;">Technology Overview</h2>
+                <p class="lead text-muted mx-auto" style="max-width: 700px;">
+                    Combining advanced computer vision with radar technology for comprehensive traffic analysis
+                </p>
+            </div>
+        </div>
+        
+        <div class="row g-4">
+            <!-- Feature 1 - Radar Fusion -->
+            <div class="col-md-4">
+                <div class="tech-feature-card bg-white rounded-3 shadow-sm p-4 h-100 text-center">
+                    <div class="feature-icon mb-3">
+                        <div class="rounded-circle d-inline-flex align-items-center justify-content-center" style="width: 70px; height: 70px; background-color: rgba(188, 67, 13, 0.1);">
+                            <i class="fas fa-satellite-dish fa-2x" style="color: #BC430D;"></i>
+                        </div>
+                    </div>
+                    <h4 class="fw-bold mb-3" style="color: #BC430D;">Radar Fusion</h4>
+                    <p class="text-muted">
+                        Coordinating radar and video systems transformed through AI-fusion algorithms for all-weather detection and analysis.
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Feature 2 - AI Deep Learning -->
+            <div class="col-md-4">
+                <div class="tech-feature-card bg-white rounded-3 shadow-sm p-4 h-100 text-center">
+                    <div class="feature-icon mb-3">
+                        <div class="rounded-circle d-inline-flex align-items-center justify-content-center" style="width: 70px; height: 70px; background-color: rgba(188, 67, 13, 0.1);">
+                            <i class="fas fa-network-wired fa-2x" style="color: #BC430D;"></i>
+                        </div>
+                    </div>
+                    <h4 class="fw-bold mb-3" style="color: #BC430D;">AI Deep Learning</h4>
+                    <p class="text-muted">
+                        Advanced deep learning algorithms achieve industry-leading performance in target recognition and detection accuracy.
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Feature 3 - Real-Time Processing -->
+            <div class="col-md-4">
+                <div class="tech-feature-card bg-white rounded-3 shadow-sm p-4 h-100 text-center">
+                    <div class="feature-icon mb-3">
+                        <div class="rounded-circle d-inline-flex align-items-center justify-content-center" style="width: 70px; height: 70px; background-color: rgba(188, 67, 13, 0.1);">
+                            <i class="fas fa-bolt fa-2x" style="color: #BC430D;"></i>
+                        </div>
+                    </div>
+                    <h4 class="fw-bold mb-3" style="color: #BC430D;">Real-Time Processing</h4>
+                    <p class="text-muted">
+                        Ultra-precise, real-time object speed detection with processing times under 50ms for immediate response.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ================= TEAM SECTION ================= -->
+<section class="team-section py-5 bg-white">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center mb-5">
+                <h2 class="fw-bold mb-3" style="color: #BC430D;">Our Team</h2>
+                <p class="lead text-muted mx-auto" style="max-width: 700px;">
+                    Experts in computer vision, AI research, and traffic engineering dedicated to creating safer roadways
+                </p>
+            </div>
+        </div>
+        
+        <div class="row g-4 justify-content-center">
+            <!-- Team Member 1 -->
+            <div class="col-lg-3 col-md-6">
+                <div class="team-card text-center">
+                    
+                    <h4 class="fw-bold mb-1" style="color: #BC430D;">Dr. Sarah Chen</h4>
+                    <p class="text-muted mb-2">Chief Technology Officer</p>
+                    <p class="small text-muted">
+                        PhD in Computer Vision with 15+ years in AI research and development.
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Team Member 2 -->
+            <div class="col-lg-3 col-md-6">
+                <div class="team-card text-center">
+                    
+                    <h4 class="fw-bold mb-1" style="color: #BC430D;">Michael Rodriguez</h4>
+                    <p class="text-muted mb-2">Lead AI Engineer</p>
+                    <p class="small text-muted">
+                        Specialized in deep learning algorithms and real-time processing systems.
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Team Member 3 -->
+            <div class="col-lg-3 col-md-6">
+                <div class="team-card text-center">
+                    
+                    <h4 class="fw-bold mb-1" style="color: #BC430D;">Dr. James Wilson</h4>
+                    <p class="text-muted mb-2">Traffic Systems Expert</p>
+                    <p class="small text-muted">
+                        20+ years in traffic engineering and smart city infrastructure.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ================= VALUES SECTION ================= -->
+<section class="values-section py-5 bg-beige-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center mb-5">
+                <h2 class="fw-bold mb-3" style="color: #BC430D;">Our Values</h2>
+            </div>
+        </div>
+        
+        <div class="row g-4">
+            <!-- Value 1 -->
+            <div class="col-md-6">
+                <div class="value-item d-flex">
+                    <div class="value-icon me-4 flex-shrink-0">
+                        <div class="rounded-circle d-flex align-items-center justify-content-center" style="width: 60px; height: 60px; background-color: rgba(188, 67, 13, 0.1);">
+                            <i class="fas fa-bullseye fa-lg" style="color: #BC430D;"></i>
+                        </div>
+                    </div>
+                    <div class="value-content">
+                        <h4 class="fw-bold mb-2" style="color: #BC430D;">Precision & Accuracy</h4>
+                        <p class="text-muted mb-0">
+                            We're committed to delivering the highest level of accuracy in speed estimation and vehicle detection, with industry-leading performance metrics.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Value 2 -->
+            <div class="col-md-6">
+                <div class="value-item d-flex">
+                    <div class="value-icon me-4 flex-shrink-0">
+                        <div class="rounded-circle d-flex align-items-center justify-content-center" style="width: 60px; height: 60px; background-color: rgba(188, 67, 13, 0.1);">
+                            <i class="fas fa-shield-alt fa-lg" style="color: #BC430D;"></i>
+                        </div>
+                    </div>
+                    <div class="value-content">
+                        <h4 class="fw-bold mb-2" style="color: #BC430D;">Safety First</h4>
+                        <p class="text-muted mb-0">
+                            Our technology is designed with one primary goal: to enhance road safety and reduce accidents through intelligent monitoring and analysis.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Value 3 -->
+            <div class="col-md-6">
+                <div class="value-item d-flex">
+                    <div class="value-icon me-4 flex-shrink-0">
+                        <div class="rounded-circle d-flex align-items-center justify-content-center" style="width: 60px; height: 60px; background-color: rgba(188, 67, 13, 0.1);">
+                            <i class="fas fa-lightbulb fa-lg" style="color: #BC430D;"></i>
+                        </div>
+                    </div>
+                    <div class="value-content">
+                        <h4 class="fw-bold mb-2" style="color: #BC430D;">Innovation</h4>
+                        <p class="text-muted mb-0">
+                            We continuously push the boundaries of what's possible with AI and computer vision, developing cutting-edge solutions for modern challenges.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Value 4 -->
+            <div class="col-md-6">
+                <div class="value-item d-flex">
+                    <div class="value-icon me-4 flex-shrink-0">
+                        <div class="rounded-circle d-flex align-items-center justify-content-center" style="width: 60px; height: 60px; background-color: rgba(188, 67, 13, 0.1);">
+                            <i class="fas fa-handshake fa-lg" style="color: #BC430D;"></i>
+                        </div>
+                    </div>
+                    <div class="value-content">
+                        <h4 class="fw-bold mb-2" style="color: #BC430D;">Partnership</h4>
+                        <p class="text-muted mb-0">
+                            We work closely with cities, researchers, and law enforcement to develop solutions that address real-world traffic challenges.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ================= CTA SECTION ================= -->
+<section class="about-cta py-5 text-white position-relative">
+    <div class="position-absolute top-0 start-0 w-100 h-100" style="background: linear-gradient(135deg, rgba(188, 67, 13, 0.9), rgba(240, 148, 16, 0.9));"></div>
+    <div class="container position-relative text-center" style="z-index: 2;">
+        <h2 class="fw-bold display-5 mb-3">Ready to Learn More?</h2>
+        <p class="lead mb-4 mx-auto" style="max-width: 600px;">
+            Contact our team to discuss how our AI-powered speed estimation technology can enhance safety in your community.
+        </p>
+        <a href="{{ url_for('contact') }}" class="btn btn-light btn-lg me-3 px-4 py-3 fw-bold" style="color: #BC430D;">
+            <i class="fas fa-envelope me-2"></i> Contact Us
+        </a>
+        <a href="{{ url_for('detection') }}" class="btn btn-outline-light btn-lg px-4 py-3">
+            <i class="fas fa-play-circle me-2"></i> Try Demo
+        </a>
+    </div>
+</section>
+
+{% endblock %}
+
+{% block extra_css %}
+<style>
+    /* About Page Specific Styles */
+    .about-hero-section {
+        min-height: 50vh;
+    }
+    
+    .bg-beige-light {
+        background-color: #F0D0C7 !important;
+    }
+    
+    .tech-feature-card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .tech-feature-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 25px rgba(188, 67, 13, 0.15) !important;
+    }
+    
+    .team-card {
+        transition: transform 0.3s ease;
+    }
+    
+    .team-card:hover {
+        transform: translateY(-5px);
+    }
+    
+    .value-item {
+        transition: transform 0.3s ease;
+    }
+    
+    .value-item:hover {
+        transform: translateX(5px);
+    }
+    
+    .about-cta {
+        background: linear-gradient(135deg, #BC430D, #F09410);
+    }
+</style>
+{% endblock %}

@@ -1,0 +1,418 @@
+{% extends "base.html" %}
+
+{% block title %}Contact - Speed Estimation System{% endblock %}
+
+{% block content %}
+
+<!-- ================= HERO SECTION ================= -->
+<section class="contact-hero-section text-white d-flex align-items-center position-relative">
+    <!-- Background Image -->
+    <div class="hero-background position-absolute w-100 h-100">
+        <img src="/static/images/contact-hero-bg.jpg" alt="Contact Background" class="w-100 h-100" style="object-fit: cover;">
+        <div class="position-absolute top-0 start-0 w-100 h-100" style="background: linear-gradient(135deg, rgba(188, 67, 13, 0.9), rgba(240, 148, 16, 0.9));"></div>
+    </div>
+    
+    <!-- Content -->
+    <div class="container py-5 position-relative" style="z-index: 2;">
+        <div class="row align-items-center">
+            <div class="col-lg-8 mx-auto text-center">
+                <h1 class="display-4 fw-bold mb-4">Get In Touch</h1>
+                <p class="lead mb-0" style="font-size: 1.3rem; line-height: 1.6;">
+                    Ready to enhance your traffic safety with our AI-powered speed estimation technology?
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ================= CONTACT SECTION ================= -->
+<section class="contact-section py-5 bg-white">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center mb-5">
+                <h2 class="fw-bold mb-3" style="color: #BC430D;">Contact Our Team</h2>
+                <p class="lead text-muted mx-auto" style="max-width: 700px;">
+                    Have questions about our technology? We're here to help you implement smarter traffic solutions.
+                </p>
+            </div>
+        </div>
+        
+        <div class="row g-5">
+            <!-- Contact Information -->
+            <div class="col-lg-4">
+                <div class="contact-info">
+                    <!-- Contact Item 1 -->
+                    <div class="contact-item d-flex mb-4">
+                        <div class="contact-icon me-4 flex-shrink-0">
+                            <div class="rounded-circle d-flex align-items-center justify-content-center" style="width: 60px; height: 60px; background-color: rgba(188, 67, 13, 0.1);">
+                                <i class="fas fa-map-marker-alt fa-lg" style="color: #BC430D;"></i>
+                            </div>
+                        </div>
+                        <div class="contact-content">
+                            <h5 class="fw-bold mb-2" style="color: #BC430D;">Our Office</h5>
+                            <p class="text-muted mb-0">
+                                123 Technology Park<br>
+                                Innovation District<br>
+                                Kolkata, India
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- Contact Item 2 -->
+                    <div class="contact-item d-flex mb-4">
+                        <div class="contact-icon me-4 flex-shrink-0">
+                            <div class="rounded-circle d-flex align-items-center justify-content-center" style="width: 60px; height: 60px; background-color: rgba(188, 67, 13, 0.1);">
+                                <i class="fas fa-phone fa-lg" style="color: #BC430D;"></i>
+                            </div>
+                        </div>
+                        <div class="contact-content">
+                            <h5 class="fw-bold mb-2" style="color: #BC430D;">Phone</h5>
+                            <p class="text-muted mb-0">
+                                +1 (555) 123-4567<br>
+                                Mon-Fri, 9:00 AM - 6:00 PM PST
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- Contact Item 3 -->
+                    <div class="contact-item d-flex mb-4">
+                        <div class="contact-icon me-4 flex-shrink-0">
+                            <div class="rounded-circle d-flex align-items-center justify-content-center" style="width: 60px; height: 60px; background-color: rgba(188, 67, 13, 0.1);">
+                                <i class="fas fa-envelope fa-lg" style="color: #BC430D;"></i>
+                            </div>
+                        </div>
+                        <div class="contact-content">
+                            <h5 class="fw-bold mb-2" style="color: #BC430D;">Email</h5>
+                            <p class="text-muted mb-0">
+                                info@speedestimation.com<br>
+                                support@speedestimation.com
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- Contact Item 4 -->
+                    <div class="contact-item d-flex">
+                        <div class="contact-icon me-4 flex-shrink-0">
+                            <div class="rounded-circle d-flex align-items-center justify-content-center" style="width: 60px; height: 60px; background-color: rgba(188, 67, 13, 0.1);">
+                                <i class="fas fa-clock fa-lg" style="color: #BC430D;"></i>
+                            </div>
+                        </div>
+                        <div class="contact-content">
+                            <h5 class="fw-bold mb-2" style="color: #BC430D;">Business Hours</h5>
+                            <p class="text-muted mb-0">
+                                Monday - Friday: 9:00 AM - 6:00 PM<br>
+                                Saturday: 10:00 AM - 2:00 PM<br>
+                                Sunday: Closed
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Contact Form -->
+            <div class="col-lg-8">
+                <div class="contact-form-container bg-light rounded-3 p-4 h-100">
+                    <h3 class="fw-bold mb-4" style="color: #BC430D;">Send us a Message</h3>
+                    <form id="contactForm">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="firstName" placeholder="First Name" required>
+                                    <label for="firstName">First Name</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="lastName" placeholder="Last Name" required>
+                                    <label for="lastName">Last Name</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="email" class="form-control" id="email" placeholder="Email Address" required>
+                                    <label for="email">Email Address</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="tel" class="form-control" id="phone" placeholder="Phone Number">
+                                    <label for="phone">Phone Number</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="subject" placeholder="Subject" required>
+                                    <label for="subject">Subject</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <textarea class="form-control" id="message" placeholder="Your Message" style="height: 150px;" required></textarea>
+                                    <label for="message">Your Message</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="privacyPolicy" required>
+                                    <label class="form-check-label text-muted small" for="privacyPolicy">
+                                        I agree to the privacy policy and terms of service
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-primary btn-lg px-4 py-3 fw-bold">
+                                    <i class="fas fa-paper-plane me-2"></i> Send Message
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ================= MAP SECTION ================= -->
+<section class="map-section py-5 bg-beige-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center mb-5">
+                <h2 class="fw-bold mb-3" style="color: #BC430D;">Find Us</h2>
+                <p class="lead text-muted mx-auto" style="max-width: 700px;">
+                    Visit our headquarters or connect with our global partners
+                </p>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-12">
+                <div class="map-container rounded-3 shadow overflow-hidden">
+                    <!-- Embedded Google Map -->
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.635838236209!2d-122.399435324046!3d37.774028271902!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f7fd6c8c8b1ed%3A0x4dd6e8b10e7c0c1e!2skol%20kata%2C%20CA%2C%20USA!5e0!3m2!1sen!2s!4v1699876543210!5m2!1sen!2s" 
+                        width="100%" 
+                        height="450" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Additional Office Locations -->
+        <div class="row mt-5 g-4">
+            <div class="col-md-4">
+                <div class="office-location text-center p-4 bg-white rounded-3 shadow-sm h-100">
+                    <div class="office-icon mb-3">
+                        <i class="fas fa-building fa-2x" style="color: #BC430D;"></i>
+                    </div>
+                    <h5 class="fw-bold mb-3" style="color: #BC430D;">Headquarters</h5>
+                    <p class="text-muted mb-2">
+                        123 Technology Park<br>
+                        Kolkata<br>
+                        India
+                    </p>
+                    <p class="text-muted small mb-0">
+                        <i class="fas fa-phone me-2"></i>+1 (555) 123-4567
+                    </p>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="office-location text-center p-4 bg-white rounded-3 shadow-sm h-100">
+                    <div class="office-icon mb-3">
+                        <i class="fas fa-building fa-2x" style="color: #BC430D;"></i>
+                    </div>
+                    <h5 class="fw-bold mb-3" style="color: #BC430D;">South Office</h5>
+                    <p class="text-muted mb-2">
+                        45 Innovation Street<br>
+                        chennai, Tamil Nadu<br>
+                        India
+                    </p>
+                    <p class="text-muted small mb-0">
+                        <i class="fas fa-phone me-2"></i>+44 20 7946 0958
+                    </p>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="office-location text-center p-4 bg-white rounded-3 shadow-sm h-100">
+                    <div class="office-icon mb-3">
+                        <i class="fas fa-building fa-2x" style="color: #BC430D;"></i>
+                    </div>
+                    <h5 class="fw-bold mb-3" style="color: #BC430D;">North Office</h5>
+                    <p class="text-muted mb-2">
+                        78 Tech Boulevard<br>
+                        Gurgaon, Haryana<br>
+                        India
+                    </p>
+                    <p class="text-muted small mb-0">
+                        <i class="fas fa-phone me-2"></i>+65 6123 4567
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ================= FAQ SECTION ================= -->
+<section class="faq-section py-5 bg-white">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center mb-5">
+                <h2 class="fw-bold mb-3" style="color: #BC430D;">Frequently Asked Questions</h2>
+                <p class="lead text-muted mx-auto" style="max-width: 700px;">
+                    Quick answers to common questions about our technology and services
+                </p>
+            </div>
+        </div>
+        
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="accordion" id="faqAccordion">
+                    <!-- FAQ Item 1 -->
+                    <div class="accordion-item border-0 mb-3 shadow-sm">
+                        <h3 class="accordion-header">
+                            <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" style="color: #BC430D;">
+                                What is the accuracy of your speed estimation system?
+                            </button>
+                        </h3>
+                        <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body text-muted">
+                                Our AI-powered speed estimation system achieves 99.7% accuracy with a deviation of ±0 km/h under optimal conditions. The system uses advanced radar fusion technology combined with computer vision algorithms for precise measurements.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ Item 2 -->
+                    <div class="accordion-item border-0 mb-3 shadow-sm">
+                        <h3 class="accordion-header">
+                            <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq2" style="color: #BC430D;">
+                                How does the radar-video fusion technology work?
+                            </button>
+                        </h3>
+                        <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body text-muted">
+                                Our system coordinates radar and video inputs, transforming and unifying them in time and space through an AI-fusion algorithm. This allows for high-precision, long-distance, and all-weather detection and analysis of target positions, speeds, and characteristics.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ Item 3 -->
+                    <div class="accordion-item border-0 mb-3 shadow-sm">
+                        <h3 class="accordion-header">
+                            <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq3" style="color: #BC430D;">
+                                What types of roads is your system designed for?
+                            </button>
+                        </h3>
+                        <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body text-muted">
+                                Our technology is optimized for various road types including urban roads, highways, fast city roads, and specified road segments. The system adapts to different environments and traffic conditions while maintaining high accuracy.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ Item 4 -->
+                    <div class="accordion-item border-0 mb-3 shadow-sm">
+                        <h3 class="accordion-header">
+                            <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq4" style="color: #BC430D;">
+                                Can the system detect multiple vehicles simultaneously?
+                            </button>
+                        </h3>
+                        <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body text-muted">
+                                Yes, our system can detect and track multiple vehicles simultaneously with real-time processing capabilities. The AI algorithms can handle complex traffic scenarios and provide individual speed measurements for each detected vehicle.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}
+
+{% block extra_css %}
+<style>
+    /* Contact Page Specific Styles */
+    .contact-hero-section {
+        min-height: 40vh;
+    }
+    
+    .bg-beige-light {
+        background-color: #F0D0C7 !important;
+    }
+    
+    .contact-item {
+        transition: transform 0.3s ease;
+    }
+    
+    .contact-item:hover {
+        transform: translateX(5px);
+    }
+    
+    .contact-form-container {
+        background-color: #FEEAF0 !important;
+        border: 1px solid rgba(188, 67, 13, 0.1);
+    }
+    
+    .form-control:focus {
+        border-color: #BC430D;
+        box-shadow: 0 0 0 0.2rem rgba(188, 67, 13, 0.25);
+    }
+    
+    .form-floating label {
+        color: #6c757d;
+    }
+    
+    .office-location {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .office-location:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 25px rgba(188, 67, 13, 0.15) !important;
+    }
+    
+    .accordion-button:not(.collapsed) {
+        background-color: rgba(188, 67, 13, 0.1);
+        color: #BC430D;
+    }
+    
+    .accordion-button:focus {
+        border-color: #BC430D;
+        box-shadow: 0 0 0 0.2rem rgba(188, 67, 13, 0.25);
+    }
+    
+    .map-container {
+        border: 2px solid rgba(188, 67, 13, 0.1);
+    }
+</style>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+    // Contact form submission handling
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        // Simple form validation
+        const formData = new FormData(this);
+        const formValid = Array.from(formData.entries()).every(([key, value]) => {
+            if (key === 'privacyPolicy') return document.getElementById('privacyPolicy').checked;
+            return value.trim() !== '';
+        });
+        
+        if (formValid) {
+            // Show success message (in a real application, you would send this to a server)
+            alert('Thank you for your message! We will get back to you soon.');
+            this.reset();
+        } else {
+            alert('Please fill in all required fields and accept the privacy policy.');
+        }
+    });
+</script>
+{% endblock %}

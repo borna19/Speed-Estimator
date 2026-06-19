@@ -1,0 +1,339 @@
+
+/* --------- NEW COLOR PALETTE --------- */
+:root {
+    --primary: #c97806;
+    --primary-dark: #BC430D;
+    --primary-darker: #BC4310;
+    --accent: #b8a32d;
+    --light-orange: #FEEAF0;
+    --light-beige: #F0D0C7;
+    --white: #FFFFFF;
+    --dark: #2F4156;
+    --muted: #6c757d;
+}
+
+/* --------- HERO SECTION --------- */
+.hero-section {
+    background: linear-gradient(135deg, var(--primary), var(--primary-dark)) !important;
+    min-height: 80vh;
+}
+
+.hero-section h1 {
+    color: var(--white) !important;
+}
+
+.hero-section .lead {
+    color: rgba(255, 255, 255, 0.9) !important;
+}
+
+.btn-light {
+    background-color: var(--white) !important;
+    border-color: var(--white) !important;
+    color: var(--primary-dark) !important;
+}
+
+.btn-outline-light {
+    color: var(--white) !important;
+    border-color: var(--white) !important;
+}
+
+.btn-outline-light:hover {
+    background-color: var(--white) !important;
+    color: var(--primary-dark) !important;
+}
+
+/* --------- RADAR FUSION SECTION --------- */
+.radar-fusion-section .Key {
+    color: var(--primary) !important;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.text-primary {
+    color: var(--primary) !important;
+}
+
+.fusion-features .d-flex {
+    color:#695518;
+}
+
+/* --------- AI DEEP LEARNING SECTION --------- */
+.ai-deep-learning-section {
+    background: var(--light-beige) !important;
+}
+
+.bg-beige-light {
+    background: var(--light-beige) !important;
+}
+
+.metric-value {
+    color: var(--primary-dark) !important;
+}
+
+/* --------- ENHANCED SAFETY SECTION --------- */
+.feature-bullet {
+    background-color: var(--primary) !important;
+}
+
+.road-types-container {
+    background: var(--light-orange) !important;
+    border: 1px solid rgba(240, 148, 16, 0.2) !important;
+}
+
+/* --------- SAFE DRIVING SECTION --------- */
+.safe-driving-section {
+    background: var(--white) !important;
+}
+
+/* --------- TRUSTED BY SECTION --------- */
+.trusted-section h5 {
+    color: var(--primary-dark) !important;
+}
+
+/* --------- INTERESTED SECTION --------- */
+.interested-section {
+    background: var(--light-beige) !important;
+}
+
+.interest-card {
+    border: 1px solid rgba(240, 148, 16, 0.2) !important;
+}
+
+.feature-tag {
+    background-color: rgba(240, 148, 16, 0.1) !important;
+    color: var(--primary-dark) !important;
+    border: 1px solid rgba(240, 148, 16, 0.3) !important;
+}
+
+/* --------- CTA SECTION --------- */
+.cta {
+    background: var(--light-orange) !important;
+}
+
+.bg-sky {
+    background: var(--light-orange) !important;
+}
+
+.text-navy {
+    color: var(--primary-dark) !important;
+}
+
+.btn-primary {
+    background-color: var(--primary) !important;
+    border-color: var(--primary) !important;
+    color: var(--white) !important;
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-dark) !important;
+    border-color: var(--primary-dark) !important;
+}
+
+.btn-outline-primary {
+    color: var(--primary) !important;
+    border-color: var(--primary) !important;
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--primary) !important;
+    color: var(--white) !important;
+}
+
+/* --------- GENERAL STYLING --------- */
+.bg-light {
+    background-color: var(--light-orange) !important;
+}
+
+.bg-white {
+    background-color: var(--white) !important;
+}
+
+.text-dark {
+    color: black !important;
+}
+
+.text-muted {
+    color: black !important;
+}
+
+/* --------- SHADOWS & EFFECTS --------- */
+.shadow {
+    box-shadow: 0 0.5rem 1rem rgba(188, 67, 13, 0.15) !important;
+}
+
+.shadow-sm {
+    box-shadow: 0 0.125rem 0.25rem rgba(188, 67, 13, 0.1) !important;
+}
+
+.rounded-3 {
+    border-radius: 0.75rem !important;
+}
+
+.rounded-4 {
+    border-radius: 1rem !important;
+}
+
+/* --------- HOVER EFFECTS --------- */
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(188, 67, 13, 0.15);
+}
+
+.interest-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(188, 67, 13, 0.2) !important;
+}
+
+.feature-tag:hover {
+    background-color: rgba(240, 148, 16, 0.2) !important;
+    transform: translateY(-2px);
+}
+
+/* --------- RESPONSIVE DESIGN --------- */
+@media (max-width: 768px) {
+    .hero-section {
+        text-align: center;
+    }
+    
+    .fusion-content {
+        padding-left: 0 !important;
+        margin-top: 2rem;
+    }
+    
+    .ai-content {
+        padding-right: 0 !important;
+        margin-bottom: 2rem;
+    }
+}
+
+/* --------- HERO SECTION --------- */
+.hero-section {
+    min-height: 80vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-background {
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.hero-section h1 {
+    color: var(--white) !important;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.hero-section .text-warning {
+    color: #FFD700 !important;
+}
+
+.hero-section .lead {
+    color: rgba(255, 255, 255, 0.95) !important;
+    font-size: 1.2rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.btn-warning {
+    background-color: #FFD700 !important;
+    border-color: #FFD700 !important;
+    color: var(--primary-dark) !important;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-warning:hover {
+    background-color: #695518 !important;
+    border-color: #FFC107 !important;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(255, 215, 0, 0.3);
+}
+
+.btn-outline-light {
+    color: var(--white) !important;
+    border-color: var(--white) !important;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-light:hover {
+    background-color: var(--white) !important;
+    color: var(--primary-dark) !important;
+    transform: translateY(-2px);
+}
+
+.hero-visual img {
+    filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.3));
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero-section {
+        text-align: center;
+        padding: 2rem 0;
+    }
+    
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero-actions .btn {
+        display: block;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    
+    .hero-actions .btn:last-child {
+        margin-bottom: 0;
+    }
+    
+    .hero-visual {
+        margin-top: 2rem;
+    }
+}
+/* Change text-warning color to white in hero section */
+.hero-section .text-warning {
+    color: var(--white) !important;
+}
+
+/* Change Start Detection button from yellow to white */
+.btn-warning {
+    background-color: var(--white) !important;
+    border-color: var(--white) !important;
+    color: var(--primary-dark) !important;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-warning:hover {
+    background-color: rgba(255, 255, 255, 0.9) !important;
+    border-color: rgba(255, 255, 255, 0.9) !important;
+    color: var(--primary-dark) !important;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.3);
+}
+
+/* Change AI Deep Learning text color from yellow to primary color */
+.ai-deep-learning-section h2 {
+    color: var(--primary) !important;
+}
+.text-primary {
+    color: var(--primary) !important;
+}
+
+/* Change Enhanced Safety and Safe Driving headings to primary brown color */
+.enhanced-safety-section h2,
+.safe-driving-section h1 {
+    color: var(--primary) !important;
+}
+
+/* Change radar fusion description text to black */
+.radar-fusion-section .text-muted {
+    color: #000000 !important;
+}

@@ -1,0 +1,450 @@
+{% extends "base.html" %}
+
+{% block title %}Home - Speed Estimation System{% endblock %}
+
+{% block content %}
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<!-- ================= HERO SECTION ================= -->
+<section class="hero-section text-white d-flex align-items-center position-relative">
+    <!-- Background Image -->
+    <div class="hero-background position-absolute w-100 h-100">
+        <img src="/static/images/highway-bg.jpg" alt="Background" class="w-100 h-100" style="object-fit: cover;">
+        <div class="position-absolute top-0 start-0 w-100 h-100" style="background: linear-gradient(135deg, rgba(170, 109, 23, 0.9), rgba(194, 93, 46, 0.9));"></div>
+    </div>
+    
+    <!-- Content -->
+    <div class="container py-5 position-relative" style="z-index: 2;">
+        <div class="row align-items-center">
+            <!-- Left Text -->
+            <div class="col-lg-6 mb-4">
+                <h1 class="display-4 fw-bold mb-3">
+                    Real-Time Speed
+                    <span class="text-warning">Estimation Powered by AI Vision</span>
+                </h1>
+
+                <p class="lead mb-4" style="font-size: 1.2rem; line-height: 1.6;">
+                    Experience ultra-precise, real-time object speed detection using advanced computer vision algorithms. Designed for professionals, researchers, and smart-city applications.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="{{ url_for('detection') }}" class="btn btn-warning btn-lg me-3 shadow fw-bold px-4 py-3">
+                        <i class="fas fa-play-circle me-2"></i> Start Detection
+                    </a>
+                    <a href="{{ url_for('about') }}" class="btn btn-outline-light btn-lg px-4 py-3">
+                        <i class="fas fa-info-circle me-2"></i> Learn More
+                    </a>
+                </div>
+            </div>
+
+        
+            <!-- Right Side - Optional Image or Graphic -->
+<div class="col-lg-6 text-center">
+    <div class="hero-visual">
+        <img src="/static/images/ai-radar-graphic.png" alt="AI Radar Visualization" class="img-fluid" style="max-height: 400px; border-radius: 20px;">
+    </div>
+</div>
+        </div>
+    </div>
+</section>
+
+<!-- Radar Video Fusion Technology Section -->
+<section class="radar-fusion-section py-5 bg-white">
+    <div class="container">
+        
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <div class="fusion-image-container text-center">
+                    <img src="/static/images/radar-video-fusion.jpg" alt="Radar Video Fusion Technology" class="img-fluid rounded-3 shadow">
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="fusion-content ps-lg-5">
+                    <h2 class="display-6 fw-bold text-primary mb-4">Radar Video Fusion Technology</h2>
+                    <p class="lead text-muted mb-4">
+                        Coordinating radar and video systems are transformed and unified in time and space through an AI-fusion algorithm.
+                    </p>
+                    <p class="text-muted mb-4">
+                        The target position, speed, characteristics and other information are identified to carry out high-precision, long-distance and all-weather detection and analysis.
+                    </p>
+                    <div class="fusion-features">
+                        <div class="row">
+                            <div class="col-sm-6 mb-3">
+                                <div class="d-flex align-items-center">
+                                    
+                            </div>
+                            <div class="col-sm-6 mb-3">
+                                <div class="d-flex align-items-center">
+                                    
+                            </div>
+                            <div class="col-sm-6 mb-3">
+                                <div class="d-flex align-items-center">
+                                    
+                            </div>
+                            <div class="col-sm-6 mb-3">
+                                <div class="d-flex align-items-center">
+                                    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- AI Deep Learning Section -->
+<section class="ai-deep-learning-section py-5 bg-beige-light">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 order-lg-2">
+                <div class="ai-image-container text-center">
+                    <img src="/static/images/ai-deep-learning.jpg" alt="AI Deep Learning Technology" class="img-fluid rounded-3 shadow">
+                </div>
+            </div>
+            <div class="col-lg-6 order-lg-1">
+                <div class="ai-content pe-lg-5">
+                    <h2 class="display-6 fw-bold text-primary mb-4">AI Deep Learning</h2>
+                    <p class="lead text-muted mb-4">
+                        High recognition and detection accuracy of target attributes.
+                    </p>
+                    <p class="text-muted mb-4">
+                        Advanced, deep learning algorithm technology achieves industry-leading performance, delivering power and convenience to users.
+                    </p>
+                    
+                    
+                    
+                    <div class="performance-metrics">
+                        <div class="row text-center">
+                            <div class="col-4">
+                                <div class="metric-value h4 fw-bold text-primary mb-1">99.7%</div>
+                                <div class="metric-label text-muted small">Accuracy Rate</div>
+                            </div>
+                            <div class="col-4">
+                                <div class="metric-value h4 fw-bold text-primary mb-1">&lt;50ms</div>
+                                <div class="metric-label text-muted small">Processing Time</div>
+                            </div>
+                            <div class="col-4">
+                                <div class="metric-value h4 fw-bold text-primary mb-1">24/7</div>
+                                <div class="metric-label text-muted small">Operation</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Enhanced Safety Section -->
+<section class="enhanced-safety-section py-5 bg-white">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <!-- Main Heading -->
+                <div class="text-center mb-5">
+                    <h2 class="fw-bold text-dark" style="font-size: 2.5rem;">Enhanced safety at major roads</h2>
+                </div>
+                
+                <!-- Content Row -->
+                <div class="row align-items-start">
+                    <!-- Left Column - Features List -->
+                    <div class="col-md-7">
+                        <div class="features-list">
+                            <div class="feature-item d-flex align-items-start mb-4">
+                                <div class="feature-bullet bg-primary rounded-circle me-3 mt-1 flex-shrink-0" style="width: 8px; height: 8px;"></div>
+                                <div class="feature-text">
+                                    <p class="text-muted mb-0" style="font-size: 1.1rem; line-height: 1.6;">
+                                        Requisite driving behaviors, reduces traffic accident rates, improves traffic safety
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div class="feature-item d-flex align-items-start mb-4">
+                                <div class="feature-bullet bg-primary rounded-circle me-3 mt-1 flex-shrink-0" style="width: 8px; height: 8px;"></div>
+                                <div class="feature-text">
+                                    <p class="text-muted mb-0" style="font-size: 1.1rem; line-height: 1.6;">
+                                        Reacts seething vehicles, provides forensic evidence, locates suspects' routes
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div class="feature-item d-flex align-items-start mb-4">
+                                <div class="feature-bullet bg-primary rounded-circle me-3 mt-1 flex-shrink-0" style="width: 8px; height: 8px;"></div>
+                                <div class="feature-text">
+                                    <p class="text-muted mb-0" style="font-size: 1.1rem; line-height: 1.6;">
+                                        High-speed measurement accuracy with deviation of ±0 km/h
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div class="feature-item d-flex align-items-start mb-4">
+                                <div class="feature-bullet bg-primary rounded-circle me-3 mt-1 flex-shrink-0" style="width: 8px; height: 8px;"></div>
+                                <div class="feature-text">
+                                    <p class="text-muted mb-0" style="font-size: 1.1rem; line-height: 1.6;">
+                                        Provides abundant vehicle feature data - license plate number, speed, vehicle color, manufacturer, type
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div class="feature-item d-flex align-items-start">
+                                <div class="feature-bullet bg-primary rounded-circle me-3 mt-1 flex-shrink-0" style="width: 8px; height: 8px;"></div>
+                                <div class="feature-text">
+                                    <p class="text-muted mb-0" style="font-size: 1.1rem; line-height: 1.6;">
+                                        Phone use, seatbelt status and other violations detection
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Right Column - Road Types -->
+                    <div class="col-md-5">
+                        <div class="road-types-section">
+                            <div class="road-types-container bg-light rounded-3 p-4">
+                                <div class="row g-4">
+                                    <!-- Urban Roads -->
+                                    <div class="col-6">
+                                        <div class="road-type text-center">
+                                            <div>
+                                                <img src="/static/images/urban-roads-icon.png" alt="Urban Roads" class="img-fluid">
+                                            </div>
+                                            <h5 class="fw-bold text-dark mb-1">Urban roads</h5>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Highways -->
+                                    <div class="col-6">
+                                        <div class="road-type text-center">
+                                            <div>
+                                                <img src="/static/images/highways-icon.png" alt="Highways" class="img-fluid">
+                                            </div>
+                                            <h5 class="fw-bold text-dark mb-1">Highways</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Safe Driving Section -->
+<section class="safe-driving-section py-5 bg-white">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <!-- Main Heading -->
+                <div class="text-center mb-4">
+                    <h1 class="fw-bold text-dark mb-3">Safe driving in specified road segments.</h1>
+                    
+                </div>
+                
+                <!-- Content Row -->
+                <div class="row">
+                    <!-- Left Column - Features List -->
+                    <div class="col-md-6">
+                        <div class="features-list">
+                            <div class="feature-item mb-3">
+                                <p class="text-muted mb-0">
+                                    Prevents disputes between citizens and law enforcement, enhances efficiency and standardization of law enforcement
+                                </p>
+                            </div>
+                            
+                            <div class="feature-item mb-3">
+                                <p class="text-muted mb-0">
+                                    Avoids drivers deliberately brake to escape speeding behavior when seeing the fixed speed detection sites effectively
+                                </p>
+                            </div>
+                            
+                            <div class="feature-item mb-3">
+                                <p class="text-muted mb-0">
+                                    Provides abundant vehicle feature data – license plate number, speed, vehicle color, manufacturer, type
+                                </p>
+                            </div>
+                            
+                            <div class="feature-item">
+                                <p class="text-muted mb-0">
+                                    Phone use, seatbelt status and other violations detection
+                                </p>
+                                <p class="text-muted mb-0">“Every second you look at your phone while driving multiplies your risk of a crash.”
+
+“Road safety starts with your choices. Choose wisely.”
+
+“A responsible driver respects speed limits and saves lives.”
+
+“Safe driving protects not just you, but everyone around you.”
+
+“Think about your family before you press the accelerator.”</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Right Column - Road Segments -->
+                    <div class="col-md-6">
+                        <div class="road-segments-container">
+                            
+                                
+                            
+                            <!-- Fast City Roads Segment -->
+                            
+                                <!-- Fast City Roads Image Below Text -->
+                                <div class="segment-image mt-3">
+                                    <img src="/static/images/fast-city-roads.jpg" alt="Fast City Roads" class="img-fluid rounded">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- ================= TRUSTED BY ================= -->
+<section class="trusted-section py-5 bg-white">
+    <div class="container text-center">
+        <h5 class="text-muted mb-4">TRUSTED BY PROFESSIONALS & ENGINEERS</h5>
+        <div class="d-flex justify-content-center align-items-center gap-5 flex-wrap">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" width="60">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" width="60">
+            
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Git_icon.svg" width="60">
+        </div>
+    </div>
+</section>
+
+<!-- You May Also Be Interested In Section -->
+<section class="interested-section py-5 bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="text-center mb-5">
+                    <h2 class="fw-bold text-dark">You may also be interested in</h2>
+                </div>
+                
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="interest-card bg-white rounded-4 shadow-sm p-4">
+                            <div class="row align-items-center">
+                                <div class="col-md-4 text-center mb-3 mb-md-0">
+                                    <div class="interest-image-container">
+                                        <img src="/static/images/vehicle-information-detection.jpg" alt="Vehicle information detection" class="img-fluid rounded-3">
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <h3 class="fw-bold text-primary mb-2">Vehicle information detection</h3>
+                                    <p class="text-muted mb-3">
+                                        Engrained with deep learning algorithms, recognize vehicle features, offer information.
+                                    </p>
+                                    <div class="interest-features">
+                                        <div class="feature-tag bg-primary bg-opacity-10 text-primary rounded-pill px-3 py-1 d-inline-block me-2 mb-2 small">
+                                            Speed calculation by function
+                                        </div>
+                                        <div class="feature-tag bg-primary bg-opacity-10 text-primary rounded-pill px-3 py-1 d-inline-block me-2 mb-2 small">
+                                            Caps of the bridge
+                                        </div>
+                                        <div class="feature-tag bg-primary bg-opacity-10 text-primary rounded-pill px-3 py-1 d-inline-block mb-2 small">
+                                            Connectors of engineering system
+                                        </div>
+                                    </div>
+                                    <p class="text-muted small mb-0 mt-2">
+                                        Accepts traffic flowing and analysis in real-time scenarios.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ================= CALL TO ACTION ================= -->
+<section class="cta py-5 bg-sky">
+    <div class="container text-center">
+        <h2 class="fw-bold display-5 mb-3 text-navy">Ready to Begin?</h2>
+        <p class="lead text-dark mb-4">
+            Join 100+ engineers and researchers using our AI-powered speed estimation tool.
+        </p>
+
+        <a href="{{ url_for('detection') }}" class="btn btn-primary btn-lg me-3">
+            <i class="fas fa-play"></i> Start Detection
+        </a>
+
+        <a href="{{ url_for('contact') }}" class="btn btn-outline-primary btn-lg">
+            <i class="fas fa-question-circle"></i> Contact Support
+        </a>
+    </div>
+</section>
+
+{% endblock %}
+
+{% block extra_css %}
+<style>
+
+/* --------- COLOR PALETTE --------- */
+:root{
+    --navy: #2F4156;
+    --teal: #567C8D;
+    --sky: #C8D9E6;
+    --beige: #F5F5EB;
+    --white: #FFFFFF;
+}
+
+/* --------- HERO SECTION --------- */
+.hero-section{
+    background: linear-gradient(135deg, var(--navy), var(--teal));
+    min-height: 80vh;
+}
+.hero-img{
+    max-height: 350px;
+    object-fit: cover;
+}
+
+/* --------- FEATURES --------- */
+.feature-card{
+    border: 1px solid #e6e6e6;
+    transition: 0.3s ease;
+}
+.feature-card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+/* --------- DEMO SECTION --------- */
+.bg-beige{
+    background: var(--beige);
+}
+
+/* --------- APPLICATIONS --------- */
+.bg-navy{
+    background: var(--navy);
+}
+.text-sky{
+    color: var(--sky);
+}
+.app-card{
+    background: rgba(255,255,255,0.05);
+    border-radius: 10px;
+    transition: 0.3s;
+}
+.app-card:hover{
+    background: rgba(255,255,255,0.15);
+}
+
+/* --------- CTA --------- */
+.bg-sky{
+    background: var(--sky);
+}
+.text-navy{
+    color: var(--navy);
+}
+
+</style>
+{% endblock %}
